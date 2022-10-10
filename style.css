@@ -11,10 +11,10 @@ body{
     justify-content: center;
     flex-direction: column;
     border: 1px solid black;
+    border-radius: 5px;
     text-align: center;
     margin: auto;
-    padding: 5px;
-    margin-top: 0;
+    padding: 0px 5px 15px 5px;
     background: darkslateblue;
     color: white;
   }
@@ -23,6 +23,13 @@ div{
     flex-direction: column;
     width: auto;
     height: auto;
+    margin-top: 0px;
+}
+h3{
+ font-size: 25px;
+ border: 1px solid black;
+ margin-top: 5px;
+ top: 0;
 }
 body img {
     display: flex;

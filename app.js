@@ -10,6 +10,11 @@ const change_image = function () {
   }
   if (img.dataset.image == "logo2") {
     img.src = "/images/discord.webp";
+    img.dataset.image = "logo3";
+    return;
+  }
+  if (img.dataset.image == "logo3") {
+    img.src = "/images/logo.png";
     img.dataset.image = "logo1";
     return;
   }
@@ -29,53 +34,55 @@ document.getElementById("myBtn").addEventListener("click", function () {
   if (imgUrl.value != "") {
     img.src = imgUrl.value;
     return;
-  }; });
+  }
+});
 
-  //to make image gide on button press
-  //   if (imageDisplayed == true) {
-  //     // var img = document.getElementById("img");
-  //     img.style.display = "none";
-  //     imageDisplayed = false;
-  //     console.log(imageDisplayed);
-  //     return;
-  //   } else {
-  //     // var img = document.getElementById("img");
-  //     img.style.display = "block";
-  //     imageDisplayed = true;
-  //     console.log(imageDisplayed);
-  //     return;
-  //   }
+//to make image gide on button press
+//   if (imageDisplayed == true) {
+//     // var img = document.getElementById("img");
+//     img.style.display = "none";
+//     imageDisplayed = false;
+//     console.log(imageDisplayed);
+//     return;
+//   } else {
+//     // var img = document.getElementById("img");
+//     img.style.display = "block";
+//     imageDisplayed = true;
+//     console.log(imageDisplayed);
+//     return;
+//   }
 
-  //activity 2
-  // select color and update
-  document.getElementById("colorBtn").addEventListener("click", function () {
-    // alert("Print");
-    var heading = document.getElementById("customH3");
-    var color = document.getElementById("h3Color");
-  
-    if (color.value != "") {
-        heading.style.color = color.value;
-      return;
-    }; });
+//activity 2
+// select color and update
+document.getElementById("colorBtn").addEventListener("click", function () {
+  // alert("Print");
+  var heading = document.getElementById("customH3");
+  var headings = document.getElementsByClassName("customH3");
+  var color = document.getElementById("h3Color");
 
-    // function to display where clients x and y are
-    // if scrolling the div it will just print put it also prints 
-    // when clicked anywhere outside the container
+  if (color.value != "") {
+    heading.style.color = color.value;
+    return;
+  }
+});
 
-    document.addEventListener("click", function ()  {
-        var x = event.clientX;
-        var y = event.clientY;
-        var coor = "X coords: " + x + ", Y coords: " + y;
-        document.getElementById("demo").innerHTML = coor;
-    }
-    )
-    function showCoords(event) {
-        var x = event.clientX;
-        var y = event.clientY;
-        var coor = "X coords: " + x + ", Y coords: " + y;
-        document.getElementById("demo").innerHTML = coor;
-      }
-      
-      function clearCoor() {
-        document.getElementById("demo").innerHTML = "";
-      }
+// function to display where clients x and y are
+// if scrolling the div it will just print put it also prints
+// when clicked anywhere outside the container
+
+document.addEventListener("click", function (event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coor = "X coords: " + x + ", Y coords: " + y;
+  document.getElementById("demo").innerHTML = coor;
+});
+function showCoords(event) {
+  var x = event.clientX;
+  var y = event.clientY;
+  var coor = "X coords: " + x + ", Y coords: " + y;
+  document.getElementById("demo").innerHTML = coor;
+}
+
+function clearCoor() {
+  document.getElementById("demo").innerHTML = "";
+}
