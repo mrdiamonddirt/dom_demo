@@ -1,4 +1,4 @@
-const heading = document.getElementById('heading');
+const Image = document.getElementById('logo');
 const input = document ;
 
 document.addEventListener('click', (event) => {
