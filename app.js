@@ -37,20 +37,21 @@ document.getElementById("myBtn").addEventListener("click", function () {
   }
 });
 
-//to make image gide on button press
-//   if (imageDisplayed == true) {
-//     // var img = document.getElementById("img");
-//     img.style.display = "none";
-//     imageDisplayed = false;
-//     console.log(imageDisplayed);
-//     return;
-//   } else {
-//     // var img = document.getElementById("img");
-//     img.style.display = "block";
-//     imageDisplayed = true;
-//     console.log(imageDisplayed);
-//     return;
-//   }
+document.getElementById("hideImg").addEventListener("click", function () {
+//to make image hide on button press
+  if (imageDisplayed === true) {
+    // var img = document.getElementById("img");
+    img.style.display = "none";
+    imageDisplayed = false;
+    console.log(imageDisplayed);
+    return;
+  } else {
+    // var img = document.getElementById("img");
+    img.style.display = "block";
+    imageDisplayed = true;
+    console.log(imageDisplayed);
+    return;
+  }})
 
 //activity 2
 // select color and update

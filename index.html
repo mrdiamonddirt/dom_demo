@@ -19,17 +19,25 @@
       <input id="imgUrl" placeholder="Enter image url" type="text" />
       <label for="mybtn"></label>
       <button id="myBtn">Refresh Image</button>
+      <button id="hideImg">Hide/Reveal Image</button>
     </div>
+
     <div class="container">
       <h3 id="customH3">Custom Header Color</h3>
       <input id="h3Color" type="text" />
       <button id="colorBtn">Change Color</button>
     </div>
+
     <div class="container">
-        <h3>Mouse Pad</h3>
-      <div class="mousePad"onmousemove="showCoords(event)" onmouseout="clearCoor()"></div>
+      <h3>Mouse Pad</h3>
+      <div
+        class="mousePad"
+        onmousemove="showCoords(event)"
+        onmouseout="clearCoor()"
+      ></div>
       <p id="demo"></p>
     </div>
+    
     <script src="app.js"></script>
   </body>
 </html>
