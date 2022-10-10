@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom_Demo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h3>Custom Image</h3>
-    <img id="img" data-image="logo1" src="/images/logo.png" onclick="change_image()" />
-    <input id="imgUrl" placeholder="Enter image url" type="text">
-    <label for="mybtn"></label>
-    <button id="myBtn">Refresh Image</button>
-
-    <h3 id="customH3">Custom Header Color</h3>
-    <input id="h3Color" type="text">
-    <button id="colorBtn">Change Color</button>
-
-    <div onmousemove="showCoords(event)" onmouseout="clearCoor()"></div>
-    <p id="demo"></p>
-    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Custom Image</h3>
+      <img
+        id="img"
+        data-image="logo1"
+        src="/images/logo.png"
+        onclick="change_image()"
+      />
+      <input id="imgUrl" placeholder="Enter image url" type="text" />
+      <label for="mybtn"></label>
+      <button id="myBtn">Refresh Image</button>
+    </div>
+    <div class="container">
+      <h3 id="customH3">Custom Header Color</h3>
+      <input id="h3Color" type="text" />
+      <button id="colorBtn">Change Color</button>
+    </div>
+    <div class="container">
+        <h3>Mouse Pad</h3>
+      <div class="mousePad"onmousemove="showCoords(event)" onmouseout="clearCoor()"></div>
+      <p id="demo"></p>
+    </div>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
