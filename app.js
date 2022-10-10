@@ -4,17 +4,17 @@ const img = document.getElementById("img");
 
 const change_image = function () {
   if (img.dataset.image == "logo1") {
-    img.src = "/images/small.gif";
+    img.src = "images/small.gif";
     img.dataset.image = "logo2";
     return;
   }
   if (img.dataset.image == "logo2") {
-    img.src = "/images/discord.webp";
+    img.src = "images/discord.webp";
     img.dataset.image = "logo3";
     return;
   }
   if (img.dataset.image == "logo3") {
-    img.src = "/images/logo.png";
+    img.src = "images/logo.png";
     img.dataset.image = "logo1";
     return;
   }
