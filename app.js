@@ -27,28 +27,43 @@ const change_image = function () {
 // click on the page and display the values in a p tag.
 // Hint: look into clientX and clientY
 
+// image functions
 
 document.getElementById("myBtn").addEventListener("click", function () {
   // alert("Print");
   var img = document.getElementById("img");
   var imgUrl = document.getElementById("imgUrl");
-  
-  if (imgUrl.value != ""){
+
+  if (imgUrl.value != "") {
     img.src = imgUrl.value;
-  }
+    return;
+  }; });
 
   //to make image gide on button press
-//   if (imageDisplayed == true) {
-//     // var img = document.getElementById("img");
-//     img.style.display = "none";
-//     imageDisplayed = false;
-//     console.log(imageDisplayed);
-//     return;
-//   } else {
-//     // var img = document.getElementById("img");
-//     img.style.display = "block";
-//     imageDisplayed = true;
-//     console.log(imageDisplayed);
-//     return;
-//   }
-});
+  //   if (imageDisplayed == true) {
+  //     // var img = document.getElementById("img");
+  //     img.style.display = "none";
+  //     imageDisplayed = false;
+  //     console.log(imageDisplayed);
+  //     return;
+  //   } else {
+  //     // var img = document.getElementById("img");
+  //     img.style.display = "block";
+  //     imageDisplayed = true;
+  //     console.log(imageDisplayed);
+  //     return;
+  //   }
+
+  //activity 2
+  // select color and update
+  document.getElementById("colorBtn").addEventListener("click", function () {
+    // alert("Print");
+    var heading = document.getElementById("customH3");
+    var color = document.getElementById("h3Color");
+  
+    if (color.value != "") {
+        heading.style.color = color.value;
+      return;
+    }; });
+
+
