@@ -15,14 +15,6 @@ const change_image = function () {
   }
 };
 
-// Create an image, button, and input in your HTML. Change the
-// source of the image to whatever image url is inside the input box
-// when the button is clicked.
-
-// Create a heading, button, and input in your HTML. Change the text
-// colour of the heading to whatever colour is typed in the input when
-// the button is clicked
-
 // Using the event object, get the x and y coordinates of where you
 // click on the page and display the values in a p tag.
 // Hint: look into clientX and clientY
@@ -66,4 +58,24 @@ document.getElementById("myBtn").addEventListener("click", function () {
       return;
     }; });
 
+    // function to display where clients x and y are
+    // if scrolling the div it will just print put it also prints 
+    // when clicked anywhere outside the container
 
+    document.addEventListener("click", function ()  {
+        var x = event.clientX;
+        var y = event.clientY;
+        var coor = "X coords: " + x + ", Y coords: " + y;
+        document.getElementById("demo").innerHTML = coor;
+    }
+    )
+    function showCoords(event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        var coor = "X coords: " + x + ", Y coords: " + y;
+        document.getElementById("demo").innerHTML = coor;
+      }
+      
+      function clearCoor() {
+        document.getElementById("demo").innerHTML = "";
+      }
